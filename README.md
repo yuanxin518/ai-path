@@ -22,6 +22,10 @@ flowchart TD
         DS2["DeepSeek V4 Pro"]
     end
 
+    subgraph "路由"
+        CPA["CLIProxyAPI"]
+    end
+
     subgraph "终端"
         TUI["DeepSeek TUI"]
         CC["Claude Code"]
@@ -36,7 +40,8 @@ flowchart TD
         AB["AstrBot"]
     end
 
-    大模型 --> 终端
+    大模型 --> 路由
+    路由 --> 终端
     终端 --> 技能
     大模型 --> 机器人
 ```
@@ -44,6 +49,7 @@ flowchart TD
 | 节点 | 位置 | 工具 |
 |------|------|------|
 | [大模型](./大模型/) | 底层 AI 能力 | DeepSeek V4 Flash / Pro |
+| [路由](./路由/) | API 代理层 | CLIProxyAPI |
 | [终端](./终端/) | 交互界面 | DeepSeek TUI · Claude Code |
 | [技能](./技能/) | Agent 扩展 | MiniMax Skills · mattpocock Skills |
 | [机器人](./机器人/) | AI 部署 | AstrBot |
@@ -55,6 +61,10 @@ flowchart TD
 ### [大模型](./大模型/)
 
 DeepSeek V4 — Flash / Pro
+
+### [路由](./路由/)
+
+CLIProxyAPI — 终端 API 代理层
 
 ### [终端](./终端/)
 
