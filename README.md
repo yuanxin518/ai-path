@@ -1,9 +1,14 @@
-> **AI 指令**：你是这个技术链路地图的维护助手。用户会告诉你用了什么工具，你负责判断它属于哪个阶段节点，更新 README 和流程图。
+<details>
+<summary><b>AI 指令</b> — 技术链路地图维护助手（点击展开）</summary>
+
+> 你是这个技术链路地图的维护助手。用户会告诉你用了什么工具，你负责判断它属于哪个阶段节点，更新 README 和流程图。
 >
 > 可用命令：
 > - **添加技术栈** — 用户说「我用了 xxx」，你归类到对应节点，更新 Mermaid 流程图和 README
 > - **添加阶段** — 用户说「新增一个叫 xxx 的阶段」，你创建新节点目录并接入流程图
 > - **刷新地图** — 重新审查所有节点，确保流程图和内容一致
+
+</details>
 
 # AI Path
 
@@ -17,33 +22,43 @@
 
 ```mermaid
 flowchart TD
-    subgraph "大模型"
+    subgraph N00["大模型"]
+        direction TB
         DS1["DeepSeek V4 Flash"]
         DS2["DeepSeek V4 Pro"]
     end
+    style N00 fill:#dbeafe,stroke:#3b82f6,stroke-width:2px,color:#1e40af
 
-    subgraph "路由"
+    subgraph N01["路由"]
+        direction TB
         CPA["CLIProxyAPI"]
     end
+    style N01 fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,color:#92400e
 
-    subgraph "终端"
+    subgraph N02["终端"]
+        direction TB
         TUI["DeepSeek TUI"]
         CC["Claude Code"]
     end
+    style N02 fill:#dcfce7,stroke:#22c55e,stroke-width:2px,color:#166534
 
-    subgraph "技能"
+    subgraph N03["技能"]
+        direction TB
         MSK["MiniMax Skills"]
         PSK["mattpocock Skills"]
     end
+    style N03 fill:#f3f4f6,stroke:#6b7280,stroke-width:2px,stroke-dasharray:6 4,color:#374151
 
-    subgraph "机器人"
+    subgraph N04["机器人"]
+        direction TB
         AB["AstrBot"]
     end
+    style N04 fill:#fce7f3,stroke:#ec4899,stroke-width:2px,color:#9d174d
 
-    大模型 --> 路由
-    路由 --> 终端
-    终端 --> 技能
-    大模型 --> 机器人
+    N00 --> N01
+    N01 --> N02
+    N02 --> N03
+    N00 --> N04
 ```
 
 | 节点 | 位置 | 工具 |
@@ -53,32 +68,6 @@ flowchart TD
 | [终端](./终端/) | 交互界面 | DeepSeek TUI · Claude Code |
 | [技能](./技能/) | Agent 扩展 | MiniMax Skills · mattpocock Skills |
 | [机器人](./机器人/) | 机器人框架 | AstrBot |
-
----
-
-## 工具清单
-
-### [大模型](./大模型/)
-
-DeepSeek V4 — Flash / Pro
-
-### [路由](./路由/)
-
-CLIProxyAPI — 终端 API 代理层
-
-### [终端](./终端/)
-
-DeepSeek TUI — 终端 AI 客户端<br>
-Claude Code — 终端 AI 客户端
-
-### [技能](./技能/)
-
-MiniMax Skills — 工程化技能仓库<br>
-mattpocock Skills — 实用技能集合
-
-### [机器人](./机器人/)
-
-AstrBot — 聊天机器人框架
 
 ---
 
