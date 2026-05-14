@@ -6,72 +6,38 @@
 
 ---
 
-## 全链路总览
+## 当前链路
 
 ```mermaid
-flowchart LR
-  subgraph N00["00 — LLM 后端"]
-      DS["DeepSeek V4"]
-  end
-  subgraph N01["01 — 客户端"]
-      TUI["DeepSeek TUI"]
-  end
-  subgraph N02["02 — Agent"]
-      AGT["Agent 模式"]
-  end
-  subgraph N03["03 — 工具/插件"]
-      MCP["MCP 服务器"]
-      SKL["Skills"]
-      SH["Shell 工具"]
-  end
-  subgraph N04["04 — 上下文"]
-      AMD["AGENTS.md"]
-      MEM["Memory"]
-      RLM["RLM"]
-  end
-  subgraph N05["05 — 工作流"]
-      GH["Git 钩子"]
-      SA["子代理分发"]
-  end
+flowchart TD
+    subgraph "大模型"
+        DS1["DeepSeek V4 Flash"]
+        DS2["DeepSeek V4 Pro"]
+    end
 
-  N00 --> N01 --> N02 --> N03 --> N04 --> N05
+    subgraph "终端"
+        TUI["DeepSeek TUI"]
+    end
+
+    大模型 --> 终端
 ```
 
-| 节点 | 做什么 | 我在用的 |
-|------|--------|---------|
-| [00 — LLM 后端](./00-llm-backends/) | 选哪个大模型 | DeepSeek V4 |
-| [01 — 客户端](./01-clients/) | 用什么交互 | DeepSeek TUI |
-| [02 — Agent](./02-agents/) | 怎么自主干活 | DeepSeek TUI Agent 模式 |
-| [03 — 工具/插件](./03-tools-extensions/) | 扩展 AI 能力 | MCP · Skills · Shell |
-| [04 — 上下文](./04-context-knowledge/) | 喂什么给 AI | AGENTS.md · Memory · RLM |
-| [05 — 工作流](./05-workflows/) | 串起来自动化 | Git 钩子 · 子代理分发 |
+| 节点 | 位置 | 工具 |
+|------|------|------|
+| [大模型](./大模型/) | 底层 AI 能力 | DeepSeek V4 Flash / Pro |
+| [终端](./终端/) | 交互界面 | DeepSeek TUI |
 
 ---
 
-## 我的工具栈（就这些）
+## 工具清单
 
-[00 — LLM 后端](./00-llm-backends/)
-- **DeepSeek V4** — Flash / Pro
+### [大模型](./大模型/)
 
-[01 — 客户端](./01-clients/)
-- **DeepSeek TUI** — 终端 AI 客户端
+DeepSeek V4 — Flash / Pro
 
-[02 — Agent](./02-agents/)
-- **DeepSeek TUI Agent 模式** — 多步任务、子代理
+### [终端](./终端/)
 
-[03 — 工具扩展](./03-tools-extensions/)
-- **MCP 服务器** — AI 调外部服务
-- **Skills** — 本地指令包
-- **Shell 工具** — 终端命令
-
-[04 — 上下文](./04-context-knowledge/)
-- **AGENTS.md** — 项目指令
-- **Memory** — 跨会话记忆
-- **RLM** — 长上下文分析
-
-[05 — 工作流](./05-workflows/)
-- **Git 钩子** — 提交前检查
-- **子代理分发** — 并行任务
+DeepSeek TUI — 终端 AI 客户端
 
 ---
 
