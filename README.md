@@ -8,12 +8,33 @@
 
 ## 全链路总览
 
-```
-  00                 01               02                03                  04             05
-┌─────────┐    ┌────────────┐    ┌──────────┐    ┌─────────────┐    ┌────────────┐    ┌──────────┐
-│  LLM    │ →  │  客户端    │ →  │  Agent   │ →  │  工具/插件   │ →  │  上下文     │ →  │  工作流   │
-│  后端    │    │  交互层    │    │  编排层   │    │  扩展层     │    │  知识管理   │    │  自动化   │
-└─────────┘    └────────────┘    └──────────┘    └─────────────┘    └────────────┘    └──────────┘
+```mermaid
+flowchart LR
+  subgraph N00["00 — LLM 后端"]
+      DS["DeepSeek V4"]
+  end
+  subgraph N01["01 — 客户端"]
+      TUI["DeepSeek TUI"]
+  end
+  subgraph N02["02 — Agent"]
+      AGT["Agent 模式"]
+  end
+  subgraph N03["03 — 工具/插件"]
+      MCP["MCP 服务器"]
+      SKL["Skills"]
+      SH["Shell 工具"]
+  end
+  subgraph N04["04 — 上下文"]
+      AMD["AGENTS.md"]
+      MEM["Memory"]
+      RLM["RLM"]
+  end
+  subgraph N05["05 — 工作流"]
+      GH["Git 钩子"]
+      SA["子代理分发"]
+  end
+
+  N00 --> N01 --> N02 --> N03 --> N04 --> N05
 ```
 
 | 节点 | 做什么 | 我在用的 |
