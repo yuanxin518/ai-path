@@ -49,16 +49,23 @@ flowchart TD
     end
     style N03 fill:#f3f4f6,stroke:#6b7280,stroke-width:2px,stroke-dasharray:6 4,color:#374151
 
-    subgraph N04["机器人"]
+    subgraph N04["工具"]
+        direction TB
+        CDM["chrome-devtools-mcp"]
+    end
+    style N04 fill:#e4f3ff,stroke:#3399ff,stroke-width:2px,color:#1a5fa8
+
+    subgraph N05["机器人"]
         direction TB
         AB["AstrBot"]
     end
-    style N04 fill:#fce7f3,stroke:#ec4899,stroke-width:2px,color:#9d174d
+    style N05 fill:#fce7f3,stroke:#ec4899,stroke-width:2px,color:#9d174d
 
     N00 --> N01
     N01 --> N02
     N02 --> N03
-    N00 --> N04
+    N02 --> N04
+    N00 --> N05
 ```
 
 | 节点 | 位置 | 工具 |
@@ -67,6 +74,7 @@ flowchart TD
 | [路由](./路由/) | API 代理层 | CLIProxyAPI |
 | [终端](./终端/) | 交互界面 | DeepSeek TUI · Claude Code |
 | [技能](./技能/) | Agent 扩展 | MiniMax Skills · mattpocock Skills |
+| [工具](./工具/) | MCP 工具服务 | chrome-devtools-mcp |
 | [机器人](./机器人/) | 机器人框架 | AstrBot |
 
 ---
