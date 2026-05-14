@@ -52,7 +52,7 @@ flowchart TD
 | [路由](./路由/) | API 代理层 | CLIProxyAPI |
 | [终端](./终端/) | 交互界面 | DeepSeek TUI · Claude Code |
 | [技能](./技能/) | Agent 扩展 | MiniMax Skills · mattpocock Skills |
-| [机器人](./机器人/) | AI 部署 | AstrBot |
+| [机器人](./机器人/) | 机器人框架 | AstrBot |
 
 ---
 
@@ -78,7 +78,7 @@ mattpocock Skills — 实用技能集合
 
 ### [机器人](./机器人/)
 
-AstrBot — QQ 聊天机器人框架
+AstrBot — 聊天机器人框架
 
 ---
 

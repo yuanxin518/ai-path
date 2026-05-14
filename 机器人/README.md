@@ -6,7 +6,7 @@
 
 ## AstrBot
 
-聊天机器人框架，接入 QQ 最方便，使用效果好。
+聊天机器人框架，接入聊天平台方便，使用效果好。
 
 - [GitHub](https://github.com/AstrBotDevs/AstrBot)
 
