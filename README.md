@@ -18,11 +18,11 @@
 
 | 节点 | 做什么 | 我在用的 |
 |------|--------|---------|
-| [00 — LLM 后端](./00-llm-backends/) | 选哪个大模型 | DeepSeek · Claude |
-| [01 — 客户端](./01-clients/) | 用什么交互 | DeepSeek TUI · Claude Code |
-| [02 — Agent](./02-agents/) | 怎么自主干活 | Agent 模式（两个客户端自带） |
+| [00 — LLM 后端](./00-llm-backends/) | 选哪个大模型 | DeepSeek V4 |
+| [01 — 客户端](./01-clients/) | 用什么交互 | DeepSeek TUI |
+| [02 — Agent](./02-agents/) | 怎么自主干活 | DeepSeek TUI Agent 模式 |
 | [03 — 工具/插件](./03-tools-extensions/) | 扩展 AI 能力 | MCP · Skills · Shell |
-| [04 — 上下文](./04-context-knowledge/) | 喂什么给 AI | 项目指令 · Memory · RLM |
+| [04 — 上下文](./04-context-knowledge/) | 喂什么给 AI | AGENTS.md · Memory · RLM |
 | [05 — 工作流](./05-workflows/) | 串起来自动化 | Git 钩子 · 子代理分发 |
 
 ---
@@ -30,16 +30,13 @@
 ## 我的工具栈（就这些）
 
 [00 — LLM 后端](./00-llm-backends/)
-- **DeepSeek** — V4 Flash / Pro
-- **Claude** — Sonnet
+- **DeepSeek V4** — Flash / Pro
 
 [01 — 客户端](./01-clients/)
 - **DeepSeek TUI** — 终端 AI 客户端
-- **Claude Code** — 终端 AI 客户端
 
 [02 — Agent](./02-agents/)
 - **DeepSeek TUI Agent 模式** — 多步任务、子代理
-- **Claude Code Agent** — 编码代理
 
 [03 — 工具扩展](./03-tools-extensions/)
 - **MCP 服务器** — AI 调外部服务
@@ -47,7 +44,7 @@
 - **Shell 工具** — 终端命令
 
 [04 — 上下文](./04-context-knowledge/)
-- **AGENTS.md / CLAUDE.md** — 项目指令
+- **AGENTS.md** — 项目指令
 - **Memory** — 跨会话记忆
 - **RLM** — 长上下文分析
 

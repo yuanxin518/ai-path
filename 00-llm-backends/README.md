@@ -4,16 +4,11 @@
 
 ---
 
-## DeepSeek
+## DeepSeek V4
 
-- V4 Flash / V4 Pro
+- Flash / Pro
 - 性价比高，长上下文（1M tokens）
 - Agent 模式支持好
-
-## Claude
-
-- Sonnet
-- 代码能力强，与 Claude Code 深度集成
 
 ---
 

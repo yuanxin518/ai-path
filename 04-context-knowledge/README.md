@@ -4,10 +4,9 @@ AI 知道什么取决于你喂了什么。
 
 ---
 
-## 项目指令
+## AGENTS.md
 
-- **AGENTS.md** — DeepSeek TUI 项目指令
-- **CLAUDE.md** — Claude Code 项目指令
+DeepSeek TUI 项目指令，自动加载。
 
 ## Memory
 
