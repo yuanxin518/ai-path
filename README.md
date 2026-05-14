@@ -27,13 +27,26 @@ flowchart TD
         CC["Claude Code"]
     end
 
+    subgraph "技能"
+        MSK["MiniMax Skills"]
+        PSK["mattpocock Skills"]
+    end
+
+    subgraph "机器人"
+        AB["AstrBot"]
+    end
+
     大模型 --> 终端
+    终端 --> 技能
+    大模型 --> 机器人
 ```
 
 | 节点 | 位置 | 工具 |
 |------|------|------|
 | [大模型](./大模型/) | 底层 AI 能力 | DeepSeek V4 Flash / Pro |
 | [终端](./终端/) | 交互界面 | DeepSeek TUI · Claude Code |
+| [技能](./技能/) | Agent 扩展 | MiniMax Skills · mattpocock Skills |
+| [机器人](./机器人/) | AI 部署 | AstrBot |
 
 ---
 
@@ -47,6 +60,15 @@ DeepSeek V4 — Flash / Pro
 
 DeepSeek TUI — 终端 AI 客户端<br>
 Claude Code — 终端 AI 客户端
+
+### [技能](./技能/)
+
+MiniMax Skills — 工程化技能仓库<br>
+mattpocock Skills — 实用技能集合
+
+### [机器人](./机器人/)
+
+AstrBot — QQ 聊天机器人框架
 
 ---
 
