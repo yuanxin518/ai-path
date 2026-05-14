@@ -24,6 +24,7 @@ flowchart TD
 
     subgraph "终端"
         TUI["DeepSeek TUI"]
+        CC["Claude Code"]
     end
 
     大模型 --> 终端
@@ -32,7 +33,7 @@ flowchart TD
 | 节点 | 位置 | 工具 |
 |------|------|------|
 | [大模型](./大模型/) | 底层 AI 能力 | DeepSeek V4 Flash / Pro |
-| [终端](./终端/) | 交互界面 | DeepSeek TUI |
+| [终端](./终端/) | 交互界面 | DeepSeek TUI · Claude Code |
 
 ---
 
@@ -44,7 +45,8 @@ DeepSeek V4 — Flash / Pro
 
 ### [终端](./终端/)
 
-DeepSeek TUI — 终端 AI 客户端
+DeepSeek TUI — 终端 AI 客户端<br>
+Claude Code — 终端 AI 客户端
 
 ---
 
