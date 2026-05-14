@@ -70,12 +70,12 @@ flowchart TD
 
 | 节点 | 位置 | 工具 |
 |------|------|------|
-| [大模型](./大模型/) | 底层 AI 能力 | DeepSeek V4 Flash / Pro |
-| [路由](./路由/) | API 代理层 | CLIProxyAPI |
-| [终端](./终端/) | 交互界面 | DeepSeek TUI · Claude Code |
-| [技能](./技能/) | Agent 扩展 | MiniMax Skills · mattpocock Skills |
-| [工具](./工具/) | MCP 工具服务 | chrome-devtools-mcp |
-| [机器人](./机器人/) | 机器人框架 | AstrBot |
+| [大模型](./大模型/) | 底层 AI 能力 | **DeepSeek V4 Flash / Pro** — 性价比高，长上下文（1M tokens），Agent 模式支持好 |
+| [路由](./路由/) | API 代理层 | **CLIProxyAPI** — 为终端 CLI 提供兼容 API 代理接口，支持多账号轮询负载均衡 |
+| [终端](./终端/) | 交互界面 | **DeepSeek TUI** — 终端 AI 客户端，支持 Agent/MCP/Skills/RLM<br>**Claude Code** — Anthropic 官方终端客户端，编码能力强 |
+| [技能](./技能/) | Agent 扩展 | **MiniMax Skills** — 工程化技能仓库<br>**mattpocock Skills** — 实用技能集合，含 grill-me 方案测试 |
+| [工具](./工具/) | MCP 工具服务 | **chrome-devtools-mcp** — Chrome 官方 MCP 服务，让 AI 控制浏览器 DevTools |
+| [机器人](./机器人/) | 机器人框架 | **AstrBot** — 聊天机器人框架，方便接入各类聊天平台 |
 
 ---
 
