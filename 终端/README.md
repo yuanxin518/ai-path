@@ -4,7 +4,7 @@
 
 ---
 
-## DeepSeek TUI
+## ~~DeepSeek TUI~~ _(已变暗)_
 
 终端 AI 客户端，支持 Agent 模式、MCP、Skills、RLM。
 
