@@ -27,13 +27,13 @@ flowchart TD
         DS1["DeepSeek V4 Flash"]
         DS2["DeepSeek V4 Pro"]
     end
-    style N00 fill:#dbeafe,stroke:#3b82f6,stroke-width:2px,color:#1e40af
+    style N00 fill:#ffffff,stroke:#cccccc,stroke-width:1px,color:#333333
 
     subgraph N01["路由"]
         direction TB
         CPA["CLIProxyAPI"]
     end
-    style N01 fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,color:#92400e
+    style N01 fill:#ffffff,stroke:#cccccc,stroke-width:1px,color:#333333
 
     subgraph N02["终端"]
         direction TB
@@ -41,31 +41,32 @@ flowchart TD
         CC["Claude Code"]
         RX["Reasonix Code"]
     end
-    style TUI fill:#e8e8e8,stroke:#aaaaaa,stroke-width:1px,stroke-dasharray:4 4,color:#999999
+    style TUI fill:#f0f0f0,stroke:#cccccc,stroke-width:1px,stroke-dasharray:4 4,color:#999999
     style RX fill:#fff3cd,stroke:#f59e0b,stroke-width:3px,color:#92400e
-    style N02 fill:#dcfce7,stroke:#22c55e,stroke-width:2px,color:#166534
+    style N02 fill:#ffffff,stroke:#cccccc,stroke-width:1px,color:#333333
 
     subgraph N03["技能"]
         direction TB
         MSK["MiniMax Skills"]
         PSK["mattpocock Skills"]
     end
-    style N03 fill:#f3f4f6,stroke:#6b7280,stroke-width:2px,stroke-dasharray:6 4,color:#374151
+    style N03 fill:#ffffff,stroke:#cccccc,stroke-width:1px,color:#333333
 
     subgraph N04["工具"]
         direction TB
         CDM["chrome-devtools-mcp"]
     end
-    style N04 fill:#e4f3ff,stroke:#3399ff,stroke-width:2px,color:#1a5fa8
+    style N04 fill:#ffffff,stroke:#cccccc,stroke-width:1px,color:#333333
 
     subgraph N05["机器人"]
         direction TB
         AB["AstrBot"]
     end
-    style N05 fill:#fce7f3,stroke:#ec4899,stroke-width:2px,color:#9d174d
+    style N05 fill:#ffffff,stroke:#cccccc,stroke-width:1px,color:#333333
 
-    N00 --> N01
-    N01 --> N02
+    N00 --> N02
+    N00 -.-> N01
+    N01 -.-> N02
     N02 --> N03
     N02 --> N04
     N00 --> N05
