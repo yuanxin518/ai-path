@@ -100,27 +100,27 @@ flowchart TD
 
     ME --> N00
     N00 --> N01
+    N00 --> N07
     N01 --> N02
+    N01 --> N04
     N02 --> N03
-    N03 --> N04
+    N02 --> N06
     N04 --> N05
-    N05 --> N06
-    N06 --> N07
-    N07 --> N08
-    N08 --> N09
+    N07 --> N09
+    N09 --> N08
 ```
 
 | 节点 | 工具 |
 |------|------|
 | [🖥 操作系统](./操作系统/) | **Windows** 宿主机 → **WSL 2** → **openSUSE Tumbleweed** |
 | [⌨️ 终端](./终端/) | Claude Code · ⭐ Reasonix Code · WindTerm · PowerShell |
-| [🤖 大模型](./大模型/) | **DeepSeek V4 Flash / Pro** — 性价比高，长上下文（1M tokens） |
+| [🤖 大模型](./大模型/) | **DeepSeek V4 Flash / Pro** — 长上下文，Agent 友好 |
 | [🔀 路由](./路由/) | **CLIProxyAPI** — 多账号轮询负载均衡 |
 | [🎯 技能](./技能/) | MiniMax Skills · mattpocock Skills |
-| [🔧 工具](./工具/) | **chrome-devtools-mcp** — Chrome 官方 MCP 服务 |
-| [🤖 机器人](./机器人/) | **AstrBot** — AI 聊天机器人，接入多聊天平台 |
-| [🌐 浏览器](./浏览器/) | **Zen Browser** — 基于 Firefox 内核<br>├ FoxyProxy — 动态代理插件 |
-| [📚 知识库](./知识库/) | **Logseq** — 本地优先知识管理，GitHub 同步 |
+| [🔧 工具](./工具/) | **chrome-devtools-mcp** — Chrome DevTools 控制 |
+| [🤖 机器人](./机器人/) | **AstrBot** — AI 聊天机器人，多平台接入 |
+| [🌐 浏览器](./浏览器/) | **Zen Browser** + FoxyProxy 动态代理 |
+| [📚 知识库](./知识库/) | **Logseq** — 双向链接，GitHub 同步 |
 | [📰 阅读](./阅读/) | **Folo** — 现代化 RSS 阅读器 |
 
 ---
