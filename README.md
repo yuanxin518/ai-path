@@ -81,6 +81,14 @@ flowchart TD
     N06 -.-> N00
     N06 -.-> N02
     N06 -.-> N05
+    N06 -.-> N07
+
+    subgraph N07["浏览器"]
+        direction TB
+        ZB["Zen Browser"]
+        FP["FoxyProxy"]
+    end
+    style N07 fill:#e3f2fd,stroke:#42a5f5,stroke-width:2px,color:#1565c0
 ```
 
 | 节点 | 位置 | 工具 |
@@ -92,6 +100,7 @@ flowchart TD
 | [工具](./工具/) | MCP 工具服务 | **chrome-devtools-mcp** — Chrome 官方 MCP 服务，让 AI 控制浏览器 DevTools |
 | [机器人](./机器人/) | 机器人框架 | **AstrBot** — 聊天机器人框架，方便接入各类聊天平台 |
 | [操作系统](./操作系统/) | 底层运行环境 | **WSL 2** — Windows 原生 Linux 内核<br>**openSUSE Tumbleweed** — 滚动发行版 Linux |
+| [浏览器](./浏览器/) | 网页浏览与代理 | **Zen Browser** — 基于 Firefox 内核，隐私优先<br>**FoxyProxy** — 动态代理规则控制扩展 |
 
 ---
 
