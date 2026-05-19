@@ -10,6 +10,12 @@
 
 - [GitHub](https://github.com/MiniMax-AI/skills)
 
+## Andrej Karpathy Skills
+
+Karpathy 编码风格指南 — think before coding, simplicity first, surgical changes, goal-driven execution。
+
+- [GitHub](https://github.com/multica-ai/andrej-karpathy-skills)
+
 ## mattpocock Skills
 
 实用技能集合，其中 `grill-me` 非常好用（压力测试设计方案）。
