@@ -73,32 +73,55 @@ flowchart TD
 
     subgraph N06["操作系统"]
         direction TB
-        WSL["WSL 2"]
+        WIN["Windows"]
+        WSL2_["WSL 2"]
         SUSE["openSUSE Tumbleweed"]
     end
     style N06 fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px,color:#2e7d32
 
     N06 -.-> N02
     N06 -.-> N07
+    N06 -.-> N08
+    N06 -.-> N09
 
     subgraph N07["浏览器"]
         direction TB
         ZB["Zen Browser"]
-        FP["FoxyProxy"]
+        subgraph N07_P["插件"]
+            direction TB
+            FP["FoxyProxy"]
+        end
+        style N07_P fill:#e3f2fd,stroke:#90caf9,stroke-width:1px,color:#1565c0
     end
     style N07 fill:#e3f2fd,stroke:#42a5f5,stroke-width:2px,color:#1565c0
+
+    subgraph N08["知识库"]
+        direction TB
+        LOGSEQ["Logseq"]
+    end
+    style N08 fill:#fce4ec,stroke:#ef5350,stroke-width:2px,color:#c62828
+
+    N00 -.-> N08
+
+    subgraph N09["阅读"]
+        direction TB
+        FOLO["Folo"]
+    end
+    style N09 fill:#f3e5f5,stroke:#ab47bc,stroke-width:2px,color:#6a1b9a
 ```
 
 | 节点 | 位置 | 工具 |
 |------|------|------|
 | [大模型](./大模型/) | 底层 AI 能力 | **DeepSeek V4 Flash / Pro** — 性价比高，长上下文（1M tokens），Agent 模式支持好 |
 | [路由](./路由/) | API 代理层 | **CLIProxyAPI** — 为终端 CLI 提供兼容 API 代理接口，支持多账号轮询负载均衡 |
-| [终端](./终端/) | 交互界面 | ~~DeepSeek TUI~~ — 终端 AI 客户端，支持 Agent/MCP/Skills/RLM<br>**Claude Code** — Anthropic 官方终端客户端，编码能力强<br>**⭐ Reasonix Code** — 终端编码助手，支持 Agent/Subagent/MCP/技能系统 |
+| [终端](./终端/) | 交互界面 | **AI 终端**<br>~~DeepSeek TUI~~ — 已停用<br>**Claude Code** — Anthropic 官方终端 AI 客户端<br>**⭐ Reasonix Code** — 编码助手，Agent/Subagent/MCP<br><br>**系统终端**<br>**WindTerm** — 持久化终端，SSH/本地会话<br>**Windows PowerShell** — 原生命令行 |
 | [技能](./技能/) | Agent 扩展 | **MiniMax Skills** — 工程化技能仓库<br>**mattpocock Skills** — 实用技能集合，含 grill-me 方案测试 |
 | [工具](./工具/) | MCP 工具服务 | **chrome-devtools-mcp** — Chrome 官方 MCP 服务，让 AI 控制浏览器 DevTools |
 | [机器人](./机器人/) | AI 接入 | **AstrBot** — AI 聊天机器人框架，接入大模型到多聊天平台（QQ/微信/Telegram 等） |
-| [操作系统](./操作系统/) | 底层运行环境 | **WSL 2** — Windows 原生 Linux 内核<br>**openSUSE Tumbleweed** — 滚动发行版 Linux |
-| [浏览器](./浏览器/) | 网页浏览与代理 | **Zen Browser** — 基于 Firefox 内核，隐私优先<br>**FoxyProxy** — 动态代理规则控制扩展 |
+| [操作系统](./操作系统/) | 底层运行环境 | **Windows** — 宿主机<br>**WSL 2** — Linux 内核虚拟化层<br>**openSUSE Tumbleweed** — 滚动发行版 Linux 开发环境 |
+| [浏览器](./浏览器/) | 网页浏览与代理 | **Zen Browser** — 基于 Firefox 内核，隐私优先<br>├ **FoxyProxy** — 动态代理规则控制扩展（插件） |
+| [知识库](./知识库/) | 个人知识管理 | **Logseq** — 本地优先知识管理，双向链接，通过 GitHub 仓库同步 |
+| [阅读](./阅读/) | RSS 新闻阅读 | **Folo** — 现代化 RSS 阅读器，订阅管理与内容聚合 |
 
 ---
 
