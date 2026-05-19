@@ -70,6 +70,17 @@ flowchart TD
     N02 --> N03
     N02 --> N04
     N00 --> N05
+
+    subgraph N06["操作系统"]
+        direction TB
+        WSL["WSL 2"]
+        SUSE["openSUSE Tumbleweed"]
+    end
+    style N06 fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px,color:#2e7d32
+
+    N06 -.-> N00
+    N06 -.-> N02
+    N06 -.-> N05
 ```
 
 | 节点 | 位置 | 工具 |
@@ -80,6 +91,7 @@ flowchart TD
 | [技能](./技能/) | Agent 扩展 | **MiniMax Skills** — 工程化技能仓库<br>**mattpocock Skills** — 实用技能集合，含 grill-me 方案测试 |
 | [工具](./工具/) | MCP 工具服务 | **chrome-devtools-mcp** — Chrome 官方 MCP 服务，让 AI 控制浏览器 DevTools |
 | [机器人](./机器人/) | 机器人框架 | **AstrBot** — 聊天机器人框架，方便接入各类聊天平台 |
+| [操作系统](./操作系统/) | 底层运行环境 | **WSL 2** — Windows 原生 Linux 内核<br>**openSUSE Tumbleweed** — 滚动发行版 Linux |
 
 ---
 
