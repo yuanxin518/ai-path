@@ -1,12 +1,12 @@
 # 机器人
 
-将 AI 部署到即时通讯平台。
+AI 接入层 — 将大模型能力部署到即时通讯平台。
 
 ---
 
 ## AstrBot
 
-聊天机器人框架，接入聊天平台方便，使用效果好。
+AI 聊天机器人框架，接入大模型到多聊天平台（QQ/微信/Telegram 等）。
 
 - [GitHub](https://github.com/AstrBotDevs/AstrBot)
 

@@ -78,9 +78,7 @@ flowchart TD
     end
     style N06 fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px,color:#2e7d32
 
-    N06 -.-> N00
     N06 -.-> N02
-    N06 -.-> N05
     N06 -.-> N07
 
     subgraph N07["浏览器"]
@@ -98,7 +96,7 @@ flowchart TD
 | [终端](./终端/) | 交互界面 | ~~DeepSeek TUI~~ — 终端 AI 客户端，支持 Agent/MCP/Skills/RLM<br>**Claude Code** — Anthropic 官方终端客户端，编码能力强<br>**⭐ Reasonix Code** — 终端编码助手，支持 Agent/Subagent/MCP/技能系统 |
 | [技能](./技能/) | Agent 扩展 | **MiniMax Skills** — 工程化技能仓库<br>**mattpocock Skills** — 实用技能集合，含 grill-me 方案测试 |
 | [工具](./工具/) | MCP 工具服务 | **chrome-devtools-mcp** — Chrome 官方 MCP 服务，让 AI 控制浏览器 DevTools |
-| [机器人](./机器人/) | 机器人框架 | **AstrBot** — 聊天机器人框架，方便接入各类聊天平台 |
+| [机器人](./机器人/) | AI 接入 | **AstrBot** — AI 聊天机器人框架，接入大模型到多聊天平台（QQ/微信/Telegram 等） |
 | [操作系统](./操作系统/) | 底层运行环境 | **WSL 2** — Windows 原生 Linux 内核<br>**openSUSE Tumbleweed** — 滚动发行版 Linux |
 | [浏览器](./浏览器/) | 网页浏览与代理 | **Zen Browser** — 基于 Firefox 内核，隐私优先<br>**FoxyProxy** — 动态代理规则控制扩展 |
 
