@@ -69,6 +69,12 @@ flowchart TD
     end
     style N04 fill:#ffffff,stroke:#cccccc,stroke-width:1px,color:#333333
 
+    subgraph N10["💬 提示词"]
+        direction TB
+        RP["角色扮演提示词"]
+    end
+    style N10 fill:#ffffff,stroke:#cccccc,stroke-width:1px,color:#333333
+
     subgraph N05["🔧 工具"]
         direction TB
         CDM["chrome-devtools-mcp"]
@@ -110,7 +116,8 @@ flowchart TD
     N01 --> N02
     N01 --> N04
     N02 --> N03
-    N02 --> N06
+    N02 --> N10
+    N10 --> N06
     N04 --> N05
     N07 --> N09
     N09 --> N08
@@ -121,6 +128,7 @@ flowchart TD
 | [🖥 操作系统](./操作系统/) | 🪟 **Windows** 宿主机 → ⚡ **WSL 2** → 🐧 **openSUSE Tumbleweed** |
 | [⌨️ 终端](./终端/) | Claude Code · ⭐ Reasonix Code · [WindTerm](https://github.com/kingToolbox/WindTerm) · [PowerShell](https://github.com/PowerShell/PowerShell) |
 | [🤖 大模型](./大模型/) | **DeepSeek V4 Flash / Pro** — 长上下文，Agent 友好 |
+| [💬 提示词](./提示词/) | **角色扮演提示词** — 私人全能助理设定，针对 DeepSeek 等模型优化 |
 | [🔀 路由](./路由/) | **[CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI)** — 多账号轮询负载均衡 |
 | [🎯 技能](./技能/) | [MiniMax Skills](https://github.com/MiniMax-AI/skills) · [Andrej Karpathy Skills](https://github.com/multica-ai/andrej-karpathy-skills) · [mattpocock Skills](https://github.com/mattpocock/skills) |
 | [🔧 工具](./工具/) | **[chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)** — Chrome DevTools 控制 |
