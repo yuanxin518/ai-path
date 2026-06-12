@@ -22,6 +22,13 @@ Karpathy 编码风格指南 — think before coding, simplicity first, surgical 
 
 - [GitHub](https://github.com/mattpocock/skills)
 
+## Taste Skill
+
+前端审美技能集 — 反 AI slop，让 Agent 输出有品味的 UI 代码。涵盖布局/字体/动效/间距，多风格变体。
+
+- [GitHub](https://github.com/Leonxlnx/taste-skill)
+- [官网](https://tasteskill.dev)
+
 ---
 
 > **[← 返回根 README](../README.md)**
