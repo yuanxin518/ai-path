@@ -12,6 +12,15 @@ Chrome 官方出品的 MCP 服务，让 AI 编程助手控制浏览器，支持 
 
 ---
 
+## btop
+
+终端资源监控工具，展示 CPU、内存、磁盘、网络、进程等系统信息，界面美观，替代 htop。
+
+- 安装：多数发行版可直接通过包管理器安装（如 `zypper install btop` / `apt install btop`）
+- [GitHub](https://github.com/aristocratos/btop)
+
+---
+
 ## opencli
 
 把任何网站变成 CLI 工具，零配置，AI 驱动。支持 153 个站点适配器、9 个 App 适配器、13 个外部 CLI，以及浏览器操控能力。
