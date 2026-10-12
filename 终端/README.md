@@ -8,9 +8,8 @@
 
 | 工具 | 说明 |
 |------|------|
-| ~~DeepSeek TUI~~ | 终端 AI 客户端，支持 Agent/MCP/Skills/RLM（已停用） |
 | **Claude Code** | Anthropic 官方终端 AI 客户端，深度绑定 Claude，编码能力强 |
-| **Reasonix Code ⭐** | 基于 DeepSeek 的终端编码助手，支持 Agent/Subagent/MCP/技能系统 |
+| **DeepSeek Harness ⭐** | DeepSeek 官方开源 Agent 框架，一切皆插件，Web UI + 终端，MCP/技能/多代理 |
 
 ## 系统终端
 

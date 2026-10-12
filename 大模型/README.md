@@ -9,6 +9,8 @@ AI 能力的底层基座。
 - **Flash** — 快速、低成本
 - **Pro** — 更高性能
 
+- [官网](https://www.deepseek.com)
+
 ---
 
 > **[← 返回根 README](../README.md)**

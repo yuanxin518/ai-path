@@ -6,7 +6,7 @@ API 代理层，为终端 CLI 工具提供统一的供应商切换、路由和�
 
 ## CLIProxyAPI
 
-为 DeepSeek TUI、Claude Code 等 CLI 终端提供兼容的 API 代理接口，支持多账号轮询负载均衡。
+为 Claude Code 等 CLI 终端提供兼容的 API 代理接口，支持多账号轮询负载均衡。
 
 - [GitHub](https://github.com/router-for-me/CLIProxyAPI)
 
