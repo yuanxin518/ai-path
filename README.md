@@ -50,8 +50,8 @@ flowchart TD
 
     subgraph N02["🤖 大模型"]
         direction TB
-        DS1["DeepSeek V4 Flash"]
-        DS2["DeepSeek V4 Pro"]
+        DS1["deepseek-flash"]
+        DS2["GPT-6.1 Sol"]
     end
     style N02 fill:#ffffff,stroke:#cccccc,stroke-width:1px,color:#333333
 
@@ -128,7 +128,7 @@ flowchart TD
 |------|------|
 | [🖥 操作系统](./操作系统/) | 🪟 **Windows** 宿主机 → ⚡ **WSL 2** → 🐧 **openSUSE Tumbleweed** |
 | [⌨️ 终端](./终端/) | Claude Code · ⭐ [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) · [WindTerm](https://github.com/kingToolbox/WindTerm) · [PowerShell](https://github.com/PowerShell/PowerShell) |
-| [🤖 大模型](./大模型/) | **DeepSeek V4 Flash / Pro** — 长上下文，Agent 友好 |
+| [🤖 大模型](./大模型/) | **[deepseek-flash](https://api-docs.deepseek.com/zh-cn/news/news260910/)**（V4.1 Flash）— 原生多模态，Agent 友好 · **[GPT-6.1 Sol](https://developers.openai.com/api/docs/models/gpt-6.1-sol)** — OpenAI 高性价比主力 |
 | [💬 提示词](./提示词/) | **角色扮演提示词** — 私人全能助理设定，针对 DeepSeek 等模型优化 |
 | [🔀 路由](./路由/) | **[CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI)** — 多账号轮询负载均衡 · **[magpie](https://github.com/yetone/magpie)** — 菜单栏切换所有 Agent 的模型，本地网关，配额故障转移（cc-switch 替代） |
 | [🎯 技能](./技能/) | [MiniMax Skills](https://github.com/MiniMax-AI/skills) · [Andrej Karpathy Skills](https://github.com/multica-ai/andrej-karpathy-skills) · [mattpocock Skills](https://github.com/mattpocock/skills) |
